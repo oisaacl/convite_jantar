@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Convite para Jantar</title>
+</head>
+<body>
+    <div class="envelope" onclick="abrirEnvelope()">
+        <div class="flap"></div>
+        <div class="card">
+            <h1>Convite Especial</h1>
+            <p>Oi amor, você está <b>INTIMADA</b> para um jantar no <b>Tomatto</b>!<br>
+            em Vila Velha, no dia <b>05 de outubro de 2024, às 19h30</b>.<br>
+            A culinária italiana é ótima, mas a sua companhia tornará a noite ainda mais especial.</p>
+            <p>
+                <a href="https://youtu.be/EfiOAXWLAC0?si=p46eld06JxL9-vnN" target="_blank">Clique aqui para ouvir uma música romântica!</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function abrirEnvelope() {
+            const envelope = document.querySelector('.envelope');
+            envelope.classList.toggle('aberto');
+        }
+    </script>
+</body>
+</html>
